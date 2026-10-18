@@ -16,17 +16,14 @@ SpecoDex는 명세 → 계획 → 작업 → 구현 흐름을 자동화하는 CL
    brew install node bun # macOS 예시
    bun x playwright install chromium
    ```
-2. **SpecoDex 설치 방법을 고르세요**
+2. **SpecoDex 실행 확인**
    ```bash
-   npm install -g specodex     # 전역 설치
-   # 또는 한번만 실행하고 싶다면
-   npx specodex --help
-   # GitHub 최신 버전을 바로 실행하고 싶다면
-   npx github:ai-code-lab/specodex init demo-app
+   # npm 레지스트리에는 아직 배포하지 않았으므로 GitHub 최신 버전을 바로 실행합니다
+   npx github:needsbuilder/specodex --help
    ```
 3. **프로젝트 부트스트랩**
    ```bash
-   npx github:ai-code-lab/specodex init demo-app
+   npx github:needsbuilder/specodex init demo-app
    ```
    위 명령 한 번이면 다음이 자동으로 진행됩니다.
    - `demo-app/` 디렉터리에 템플릿과 샘플 아티팩트 생성
@@ -65,10 +62,8 @@ SpecoDex는 명세 → 계획 → 작업 → 구현 흐름을 자동화하는 CL
 
 ## 🧰 설치 옵션 요약
 
-- **전역 설치**: `npm install -g specodex` 또는 `bun install -g specodex`
-- **프로젝트 로컬 설치**: `npm install specodex --save-dev`
-- **즉시 실행**: `npx specodex --help`
-- **GitHub 최신 실행**: `npx github:ai-code-lab/specodex init <project>`
+- **GitHub 최신 실행**: `npx github:needsbuilder/specodex init <project>`
+- SpecoDex는 아직 npm 레지스트리에 배포하지 않았습니다. `npm install -g specodex`나 `npx specodex`처럼 패키지 이름만 쓰는 명령은 SpecoDex를 설치하지 않으니, 위의 GitHub 실행 방식을 사용하세요.
 
 SpecoDex 번들은 순수 ESM이므로 Node 18 이상이면 어디서든 실행됩니다. Bun을 사용하면 `bun specodex ...` 형식으로도 호출할 수 있습니다.
 
@@ -131,6 +126,12 @@ scripts/                # Playwright, 부트스트랩 스크립트
 
 ---
 
+## 🙏 감사의 말
+
+SpecoDex의 명세 주도 개발 흐름은 GitHub [spec-kit](https://github.com/github/spec-kit)에서 영감을 받았습니다.
+
+---
+
 ## 📄 라이선스
 
-MIT © SpecoDex Contributors
+[MIT](LICENSE) © SpecoDex Contributors

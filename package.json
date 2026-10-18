@@ -43,12 +43,12 @@
     "commander": "^12.0.0",
     "yaml": "^2.5.0"
   },
-  "homepage": "https://github.com/ai-code-lab/specodex#readme",
+  "homepage": "https://github.com/needsbuilder/specodex#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ai-code-lab/specodex.git"
+    "url": "https://github.com/needsbuilder/specodex.git"
   },
   "bugs": {
-    "url": "https://github.com/ai-code-lab/specodex/issues"
+    "url": "https://github.com/needsbuilder/specodex/issues"
   }
 }
